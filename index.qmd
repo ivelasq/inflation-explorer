@@ -79,9 +79,7 @@ last_updated_date
 #| title: "Consumer Price Index (CPI)"
 #| icon: basket
 #| color: primary
-list(
-  value = round(latest_cpi_value, 2)
-)
+round(latest_cpi_value, 2)
 ```
 
 ```{r}

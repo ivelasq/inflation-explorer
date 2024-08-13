@@ -85,8 +85,7 @@ dat <- fromJSON(file_path)
 
 series_dat <- dat |>
   map( ~ .x$Results$series) |>
-  map( ~ tibble(seriesID = .x$seriesID, data = .x$data)) |> 
-  list_rbind()
+  map_dfr( ~ tibble(seriesID = .x$seriesID, data = .x$data))
 
 combined_dat <- series_dat |>
   unnest(data)
