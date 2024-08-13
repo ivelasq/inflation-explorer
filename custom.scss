@@ -1,0 +1,29 @@
+/*-- scss:defaults --*/
+
+.value-box-title {
+    font-size: 0.8rem !important;
+}
+
+.quarto-dashboard .bslib-value-box .value-box-value {
+    font-size: clamp(.1em,10cqw,3em) !important;
+}
+
+.quarto-dashboard .card.valuebox, .quarto-dashboard .card.bslib-value-box {
+    min-height: 6rem !important;
+}
+
+.quarto-dashboard .bslib-value-box .value-box-area {
+    margin-top: -0.3rem !important;
+}
+
+.js-plotly-plot {
+    height: 400px !important;
+}
+
+.bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
+    line-height: 0.5 !important;
+}
+
+.quarto-dashboard .bslib-value-box .value-box-showcase .bi {
+    height: 0.7em !important;
+}
